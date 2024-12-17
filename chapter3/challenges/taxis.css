@@ -1,0 +1,160 @@
+:root{
+    --full-width: 45vw;
+    --partial-width: 40vw;
+    --full-height: 100vh;
+    --color-light: rgb(213,211,211);
+    --color-white:white;
+    --min-height-85vh: 85vh;
+    --min-height-60px: 60px;
+    --min-height48px: 48px;
+    --color-bluelight: #3176b1;
+    --color-blueauth: #5479a2;
+    --color-gray: rgb(205,202,202,0.5);
+    --color-bluelink: rgb(42,100,163);
+    --font-weight500: 500;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: var(--full-height);
+    background-color: var(--color-light);
+}
+
+.center{
+    display: grid;
+    place-items: center;
+    
+}
+
+.login-gov{
+    background-color: var(--color-white);
+    border-radius: 1%;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 1px 1px 10px -3px
+}
+
+.min-height-85{
+    min-height: var(--min-height-85vh);
+}
+
+
+.dflex-sb-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.full-width{
+    width: var(--full-width);
+}
+
+.auth-text{
+    padding: 0.5rem 1rem;
+    background-color: var(--color-blueauth);
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: var(--font-weight500);
+    text-align: center;
+}
+
+.color-bluelight{
+    background-color: var(--color-bluelight);
+}
+
+.m-top{
+    margin-top: 15px;
+}
+
+.min-height60{
+    min-height: var(--min-height-60px);
+}
+
+.font-sans{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.size-14{
+    font-size: 14px;
+    padding: 5px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.min-height48{
+    min-height: var(--min-height48px);
+}
+
+.xlg-text{
+    font-weight: var(--font-weight500);
+    font-size: 26px;
+}
+
+.line{
+    width: 90%;
+    height: 1px;
+    background: var(--color-gray);
+    margin-top: 30px;
+}
+
+.lg-text{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.font-strong{
+    font-weight: bold;
+}
+
+.item-large{
+    display: block;
+    width: 150%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    color: var(--color-gray);
+    background-image: none;
+    border: 1px solid #ccc;
+    
+}
+
+.no-outline{
+    outline: none;
+}
+
+
+.rounded{
+    border-radius: 4px;
+}
+
+.no-border{
+    border: none;
+}
+
+.text-white{
+    color: var(--color-white);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-bluelight);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+

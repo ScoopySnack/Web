@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.form-group{
+    display: contents;
+}
+
+label, h1,h2, p{
+    grid-column: 1;
+    width: 100%;
+}
+
+input, textarea, fieldset, button{
+    grid-column: 2;
+    width: 100%;
+}
+
+label{
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input:focus{
+    outline: 1px solid re;
+}
+
+input[type="radio"]{
+    width: auto;
+}
+
+abbr{
+    color: red;
+}
+
+input, select, button{
+    font: 1rem sans-serif;
+    width: 250px;
+}
+
+fieldset{
+    width: 250px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+button{
+    margin-top: 50px;
+}

@@ -1,0 +1,27 @@
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.box1{
+    background-color: lightblue;
+    flex: 0 0 100px;
+    /* to kouti 1 tha parei width 100px kai den tha allaksei megethos */
+}
+
+.box2{
+    background-color: lightgray;
+    flex: 1 0 500px;
+}
+
+.box3{
+    background-color: lightcoral;
+    flex: 0 1 1000px;
+    /* to kouti tha kanei shrink */
+}
