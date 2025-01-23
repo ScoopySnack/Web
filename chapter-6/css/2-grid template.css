@@ -6,7 +6,7 @@ div[class^="grid"]{
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
-    grid-template-rows: auto;
+    grid-auto-rows: auto;
 }
 
 .container-grid2{
