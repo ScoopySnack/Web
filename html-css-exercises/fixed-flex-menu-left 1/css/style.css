@@ -16,75 +16,76 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-    flex:25%;
+header {
+   flex: 25%; 
 }
 
-main{
+main {
     flex:75%;
+    height: 100vh;
+    overflow: auto;
 }
-/* Hamb Styling */
 
-.hamb{
+/*  Hamb Styling */
+
+.hamb {
+    position:absolute; 
     cursor: pointer;
     padding: 10px 10px;
-    position: absolute;
-    top: 3rem;
+    top:3rem;
     left: 17rem;
 }
 
-.hamb-line{
+.hamb-line {
     background-color: var(--white);
     height: 2px;
-    width: 20px;
-    display: none;
+    width: 30px;
+    display: block;
     position: relative;
-    
+    display: none;
 }
 
 .hamb-line::before,
-.hamb-line::after{
+.hamb-line::after {
     background-color: var(--white);
     content: '';
     display: block;
     height: 100%;
     width: 100%;
     position: absolute;
-    transition: all .2s ease-out;
 }
 
-.hamb-line::before{
-    top: 5px;
+.hamb-line::before {
+    top:5px
 }
 
-.hamb-line::after{
-    top: -5px;
+.hamb-line::after {
+    top:-5px
 }
 
-.side-menu{
+.side-menu {
     display: none;
 }
 
-.side-menu:checked ~ nav.active{
+.side-menu:checked ~ nav.active {
     display: flex;
 }
 
-.side-menu:checked ~ .hamb .hamb-line{
+.side-menu:checked ~ .hamb .hamb-line {
     background: transparent;
 }
 
-.side-menu:checked ~ .hamb .hamb-line::before{
+.side-menu:checked ~ .hamb .hamb-line::before {
     transform: rotate(-45deg);
-    top: 0;
+    top:0
 }
 
-.side-menu:checked ~ .hamb .hamb-line::after{
+.side-menu:checked ~ .hamb .hamb-line::after {
     transform: rotate(45deg);
     top: 0;
 }
 
-
-/* ***** */
+/* ******* */
 .bg-navy {
     background-color: var(--navy);
 }
@@ -192,25 +193,31 @@ main{
     border-radius: 10%;
 }
 
+
+pre {
+    white-space:pre-wrap;
+    word-wrap: break-word;
+}
+
 code {
     font-family:'Courier New', Courier, monospace;
 }
 
 @media (max-width:600px) {
-    header{
+    header {
         position: fixed;
         width: 100%;
     }
 
-    nav li{
+    nav li {
         text-align: center;
     }
 
-    nav.active{
+    nav.active {
         display: none;
     }
 
-    .hamb-line{
+    .hamb-line {
         display: block;
     }
 }
